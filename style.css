@@ -1,0 +1,250 @@
+/*
+Theme Name: Abhika Aura
+Theme URI: https://abhikaaura.com/
+Author: Abhika Aura Ltd
+Description: The complete Abhika Aura consultancy website: editable service and policy pages, accessible responsive navigation, Instagram links, and a WordPress enquiry form. Use Appearance > Abhika Aura Setup after activation.
+Version: 1.2.0
+Requires at least: 6.9
+Tested up to: 7.1
+Requires PHP: 8.3
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: abhika-aura
+Tags: custom-logo, custom-menu, theme-options, full-width-template, editor-style, featured-images
+*/
+/* The original website styles are loaded from assets/site.css. */
+.aa-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aa-header nav>ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.aa-header nav li {
+    position: relative;
+}
+
+.aa-header nav .current-menu-item>a,
+.aa-header nav .current_page_item>a {
+    color: #805d1a;
+}
+
+.aa-header nav ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 20;
+    min-width: 200px;
+    background: #faf9f6;
+    padding: 12px 18px;
+    border: 1px solid #deded5;
+    box-shadow: 0 10px 25px #0001;
+}
+
+.aa-header nav li:hover>ul,
+.aa-header nav li:focus-within>ul {
+    display: block;
+}
+
+.aa-header nav ul ul a {
+    display: block;
+    padding: 10px 0;
+}
+
+.footer-policies ul {
+    display: flex;
+    gap: 12px 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+}
+
+.aa-page-content>.wp-block-html,
+.aa-page-content>.wp-block-shortcode {
+    margin: 0;
+}
+
+.aa-enquiry-errors {
+    background: #fff3ee;
+    border-left: 3px solid #a22d15;
+    padding: 18px;
+    margin-bottom: 24px;
+    color: #732d20;
+    font-size: 17px;
+}
+
+.aa-enquiry-errors p {
+    margin: 0 0 8px;
+    color: inherit;
+}
+
+.aa-enquiry-errors ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.aa-success {
+    background: #eef4e6;
+    border-left: 3px solid #526b30;
+    padding: 20px;
+    margin-bottom: 25px;
+    color: #2e4926;
+}
+
+.aa-success p {
+    color: inherit;
+    margin: 0;
+}
+
+.aa-form-trap {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+}
+
+form input:invalid:focus,
+form textarea:invalid:focus {
+    border-color: #a22d15;
+}
+
+.aa-regular-page {
+    max-width: 960px;
+    min-height: 50vh;
+}
+
+.aa-regular-page h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    letter-spacing: -2px;
+}
+
+.aa-regular-page h2 {
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+.aa-regular-page p a,
+.aa-post-card h2 a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.aa-regular-page img,
+.aa-regular-page video,
+.aa-page-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aa-regular-page .alignwide {
+    max-width: 1144px;
+}
+
+.aa-post-card {
+    padding: 30px 0;
+    border-bottom: 1px solid #deded5;
+}
+
+.aa-post-card h2 {
+    font-size: 30px;
+}
+
+.aa-post-meta {
+    font-size: 16px;
+}
+
+.aa-pagination {
+    margin-top: 30px;
+}
+
+.aa-pagination a,
+.aa-pagination span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #deded5;
+}
+
+.aa-footer-company {
+    max-width: 720px;
+}
+
+@media(max-width:1100px) {
+    .aa-header nav>ul {
+        flex-wrap: wrap;
+        gap: 12px 26px;
+    }
+}
+
+@media(max-width:850px) {
+    .aa-header nav>ul {
+        display: block;
+        width: 100%;
+    }
+
+    .aa-header nav ul ul {
+        position: static;
+        border: 0;
+        box-shadow: none;
+        padding: 0 0 0 20px;
+    }
+
+    .aa-header nav .sub-menu {
+        display: block;
+    }
+
+    .aa-header nav a {
+        display: block;
+    }
+}
+
+/* WordPress toolbar and keyboard navigation must not obscure readable content. */
+#main:focus {
+    outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #8a651e;
+    outline-offset: 4px;
+}
+
+footer a:focus-visible {
+    outline-color: #e0bc70;
+}
+
+.aa-page-content {
+    min-width: 0;
+}
+
+@media (max-width:850px) {
+    body:not(.aa-js) .aa-header nav {
+        display: flex;
+    }
+
+    body:not(.aa-js) .menu-toggle {
+        display: none;
+    }
+}
+
+@media print {
+    .aa-pagination {
+        display: none;
+    }
+}

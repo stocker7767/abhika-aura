@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        {
+          "slug": "black",
+          "color": "#050505",
+          "name": "Rich black"
+        },
+        {
+          "slug": "gold",
+          "color": "#C69A38",
+          "name": "Classic gold"
+        },
+        {
+          "slug": "paper",
+          "color": "#FAF9F6",
+          "name": "Paper"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1240px"
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "slug": "sans",
+          "name": "Sans serif"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var:preset|font-family|sans"
+    }
+  }
+}
