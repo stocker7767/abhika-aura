@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #111311;
+    background: #faf9f6;
+}
+
+a {
+    color: #805d1a;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+.wp-block {
+    max-width: 1144px;
+}
+
+.wp-block[data-align="wide"] {
+    max-width: 1240px;
+}
+
+.wp-block-html textarea,
+.block-editor-plain-text {
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
